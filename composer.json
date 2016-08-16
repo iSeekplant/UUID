@@ -1,0 +1,14 @@
+{
+  "name": "iseekplant/uuid",
+  "description": "Some simple helper classes to use UUIDs in your Laravel projects",
+  "version": "dev-master",
+  "require": {
+    "php": ">=5.5.9",
+    "webpatser/laravel-uuid": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ISeekplant\\Uuid\\": "src/"
+    }
+  }
+}
