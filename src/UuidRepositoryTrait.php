@@ -15,13 +15,20 @@ trait UuidRepositoryTrait
      */
     public function get($uuid)
     {
-        $class = $this->repoClass;
+        $class = $this->getRepositoryClass();
 
         if (isset($this->getWith)) {
             return $class::with($this->getWith)->where($class::getUuidColumn(), $uuid)->firstOrFail();
         }
 
         return $class::where($class::$uuidColumn, $uuid)->firstOrFail();
+    }
+
+    public function getRepositoryClass()
+    {
+        if(isset($this->repositoryClass)) return $this->repositoryClass;
+        
+        return str_replace('Repository', '', get_class($this));
     }
 
     /**
