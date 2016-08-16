@@ -1,6 +1,17 @@
 {
   "name": "iseekplant/uuid",
   "description": "Some simple helper classes to use UUIDs in your Laravel projects",
+  "keywords": ["uuid","laravel"],
+  "homepage": "https://github.com/iseekplant/uuid",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Phil Stephens",
+      "email": "phil@iseekplant.com.au",
+      "homepage": "http://www.iseekplant.com.au",
+      "role": "Developer"
+    }
+  ],
   "version": "dev-master",
   "require": {
     "php": ">=5.5.9",
